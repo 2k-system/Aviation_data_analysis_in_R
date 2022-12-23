@@ -1,0 +1,133 @@
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+CREATE TABLE `Subscribers` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `Name` varchar(255) DEFAULT NULL,
+  `Date_Of_Birth` varchar(255) DEFAULT NULL,
+  `Country` varchar(100) DEFAULT NULL,
+  `City` varchar(255) DEFAULT NULL,
+  `Company` varchar(255) DEFAULT NULL,
+  `Department` varchar(255) DEFAULT NULL,
+  `Spends` varchar(100) DEFAULT NULL,
+  `Subscribtion_Status` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
+
+INSERT INTO `Subscribers` (`id`, `Name`, `Date_Of_Birth`, `Country`, `City`, `Company`, `Department`, `Spends`, `Subscribtion_Status`) VALUES
+('1', 'Darryl', '1980-09-10 10:14:53', 'United States', 'Casper', 'Dolor LLC', 'Human Resources', '$312.43', 'F'),
+('2', 'Ryan', '1961-06-17 18:55:23', 'India', 'Kohima', 'Aliquet Phasellus Fermentum Company', 'Finances', '$939.33', 'T'),
+('3', 'Driscoll', '2004-12-04 22:29:27', 'United States', 'Saint Louis', 'Diam Limited', 'Advertising', '$426.99', 'F'),
+('4', 'Dora', '2002-11-09 16:23:02', 'United States', 'Kansas City', 'Dolor Ltd', 'Finances', '$887.20', 'F'),
+('5', 'Matthew', '1966-03-19 21:01:49', 'United States', 'Frankfort', 'Varius Ultrices Company', 'Customer Relations', '$256.49', 'F'),
+('6', 'Germaine', '1976-03-14 12:59:33', 'United States', 'Tucson', 'Lacus Incorporated', 'Finances', '$70.62', 'T'),
+('7', 'Herrod', '1961-05-06 02:58:12', 'United States', 'Pocatello', 'Mauris Sit Amet Limited', 'Customer Service', '$365.37', 'T'),
+('8', 'Porter', '1970-07-23 11:35:10', 'India', 'Malegaon', 'Vel Mauris Company', 'Finances', '$860.49', 'T'),
+('9', 'Caesar', '1972-09-30 17:09:18', 'United States', 'Davenport', 'Nonummy Limited', 'Public Relations', '$693.26', 'T'),
+('10', 'Julian', '1975-11-02 05:25:27', 'United States', 'Lowell', 'Nullam Velit Company', 'Accounting', '$220.39', 'F'),
+('11', 'Jane', '1976-08-12 20:44:44', 'India', 'Panjim', 'Orci Ut Sagittis Incorporated', 'Sales and Marketing', '$623.52', 'T'),
+('12', 'Cyrus', '1967-08-20 22:38:59', 'India', 'Raurkela', 'Nulla Tempor Augue Industries', 'Legal Department', '$68.02', 'F'),
+('13', 'Harper', '1974-12-11 03:04:09', 'United States', 'San Francisco', 'Tempus Associates', 'Quality Assurance', '$242.12', 'T'),
+('14', 'Basia', '1990-05-06 14:49:59', 'India', 'Kohima', 'Morbi Accumsan Incorporated', 'Asset Management', '$520.79', 'T'),
+('15', 'Galvin', '1977-10-30 05:04:50', 'India', 'Ranchi', 'Ante Vivamus Limited', 'Asset Management', '$944.65', 'F'),
+('16', 'Callum', '1982-08-04 01:14:32', 'India', 'Chandigarh', 'Mi Lacinia Mattis Company', 'Payroll', '$523.61', 'T'),
+('17', 'Vera', '1991-10-31 22:15:49', 'United States', 'South Burlington', 'Diam Luctus Incorporated', 'Finances', '$622.07', 'F'),
+('18', 'Abraham', '1995-05-10 19:16:32', 'India', 'Alwar', 'Ultricies Institute', 'Accounting', '$103.04', 'F'),
+('19', 'Jin', '2000-04-24 22:29:01', 'India', 'Itanagar', 'Congue A Aliquet Company', 'Human Resources', '$391.20', 'F'),
+('20', 'Kimberley', '1999-05-05 13:41:57', 'India', 'Dehradun', 'Ridiculus Incorporated', 'Public Relations', '$421.71', 'T'),
+('21', 'Brady', '1991-03-19 13:23:33', 'India', 'Eluru', 'Montes Nascetur Ridiculus Inc.', 'Public Relations', '$48.94', 'T'),
+('22', 'Hilel', '1996-09-03 07:59:50', 'India', 'Itanagar', 'Sit Amet Limited', 'Public Relations', '$401.61', 'T'),
+('23', 'Fuller', '2000-04-12 13:00:15', 'India', 'Kavaratti', 'Enim Etiam Gravida LLC', 'Asset Management', '$215.60', 'F'),
+('24', 'Orli', '1975-02-23 01:38:44', 'India', 'Mahbubnagar', 'Nunc LLC', 'Payroll', '$943.80', 'T'),
+('25', 'Kitra', '1986-06-17 15:53:35', 'India', 'Silvassa', 'Nulla Limited', 'Customer Relations', '$784.35', 'F'),
+('26', 'Tiger', '1985-05-19 18:21:54', 'United States', 'Lincoln', 'Sed Congue Company', 'Finances', '$780.05', 'F'),
+('27', 'Marvin', '1990-10-10 23:40:33', 'India', 'Port Blair', 'A Foundation', 'Finances', '$374.25', 'T'),
+('28', 'Chaim', '1972-08-18 16:22:32', 'United States', 'Atlanta', 'Sem Pellentesque Ut LLC', 'Customer Relations', '$24.85', 'F'),
+('29', 'Nehru', '1962-11-28 23:16:44', 'India', 'Mysore', 'Egestas Ligula Nullam Corporation', 'Customer Service', '$646.86', 'F'),
+('30', 'Sean', '1966-11-14 18:44:16', 'India', 'Dhanbad', 'Dolor Sit Amet Industries', 'Accounting', '$757.89', 'F'),
+('31', 'Hilary', '1984-08-26 01:05:54', 'United States', 'Hilo', 'Fermentum LLP', 'Advertising', '$24.90', 'F'),
+('32', 'Bernard', '1964-04-14 20:38:54', 'India', 'Bidar', 'Vivamus Limited', 'Research and Development', '$354.19', 'T'),
+('33', 'Tanya', '2000-07-29 22:50:40', 'India', 'Dibrugarh', 'Ipsum Phasellus Vitae Limited', 'Tech Support', '$482.97', 'F'),
+('34', 'Damon', '1990-05-11 00:27:17', 'India', 'Bharuch', 'Eleifend Non LLP', 'Sales and Marketing', '$349.64', 'T'),
+('35', 'Whilemina', '1997-07-04 20:57:26', 'India', 'Kanchipuram', 'Sed Consequat Associates', 'Accounting', '$327.67', 'F'),
+('36', 'Beck', '1977-09-29 06:47:42', 'India', 'Sambalpur', 'Vestibulum Nec Euismod Institute', 'Finances', '$902.99', 'F'),
+('37', 'Ella', '1979-03-20 07:14:13', 'United States', 'West Valley City', 'Tortor LLP', 'Legal Department', '$820.08', 'F'),
+('38', 'Summer', '1980-07-30 21:24:58', 'India', 'Port Blair', 'Sapien Cras LLC', 'Customer Service', '$557.38', 'F'),
+('39', 'Ariel', '1991-02-25 02:50:04', 'United States', 'Madison', 'Arcu Nunc Mauris PC', 'Accounting', '$829.31', 'T'),
+('40', 'Alea', '1988-07-16 13:08:51', 'India', 'Shillong', 'A PC', 'Media Relations', '$105.05', 'T'),
+('41', 'Silas', '1967-01-16 08:27:48', 'United States', 'Wyoming', 'Diam Luctus Corporation', 'Legal Department', '$908.44', 'F'),
+('42', 'Tanisha', '1963-08-02 08:56:49', 'United States', 'Columbia', 'Nec Metus LLP', 'Accounting', '$427.27', 'T'),
+('43', 'Neil', '1985-02-05 12:21:51', 'United States', 'Portland', 'Magnis Dis Company', 'Human Resources', '$954.22', 'F'),
+('44', 'Raya', '1962-12-01 14:24:44', 'India', 'Ranchi', 'Arcu Consulting', 'Payroll', '$597.16', 'T'),
+('45', 'Kaseem', '1961-10-10 13:12:54', 'India', 'Srinagar', 'Nec Ante Blandit PC', 'Media Relations', '$642.77', 'T'),
+('46', 'Colton', '1991-07-25 00:22:55', 'United States', 'Helena', 'Arcu Imperdiet Industries', 'Media Relations', '$700.33', 'F'),
+('47', 'Shelby', '1992-03-11 11:02:10', 'United States', 'Hattiesburg', 'Eu Associates', 'Media Relations', '$269.90', 'T'),
+('48', 'Emily', '1986-12-14 15:25:33', 'India', 'Aizwal', 'Parturient Montes Limited', 'Human Resources', '$939.99', 'T'),
+('49', 'Kameko', '1991-07-02 06:56:08', 'United States', 'Idaho Falls', 'Est Mauris Eu Associates', 'Asset Management', '$571.85', 'T'),
+('50', 'Guy', '1962-10-12 06:55:01', 'India', 'Bharuch', 'Eleifend Vitae Erat Foundation', 'Research and Development', '$414.96', 'F'),
+('51', 'Laurel', '1979-03-04 17:29:50', 'India', 'Silvassa', 'A Feugiat Company', 'Research and Development', '$382.98', 'T'),
+('52', 'Edward', '2000-07-25 22:41:43', 'United States', 'Hillsboro', 'Aliquam Company', 'Payroll', '$572.18', 'F'),
+('53', 'Colby', '1989-10-07 16:57:56', 'United States', 'Aurora', 'Consectetuer Adipiscing Elit Corporation', 'Human Resources', '$209.98', 'T'),
+('54', 'Leila', '1970-08-17 13:08:17', 'India', 'Kohima', 'Dictum Magna PC', 'Legal Department', '$45.34', 'T'),
+('55', 'Paula', '2001-05-10 09:42:10', 'India', 'Pondicherry', 'Ac Mattis Foundation', 'Public Relations', '$399.28', 'F'),
+('56', 'Buckminster', '1992-01-01 16:22:47', 'India', 'Port Blair', 'Amet Luctus LLP', 'Quality Assurance', '$452.04', 'F'),
+('57', 'Lamar', '1973-10-10 23:18:02', 'United States', 'Henderson', 'In Cursus Et Inc.', 'Accounting', '$830.44', 'T'),
+('58', 'Stacy', '1965-08-19 07:56:55', 'India', 'Raj Nandgaon', 'Eu Ligula Aenean Associates', 'Accounting', '$13.00', 'F'),
+('59', 'Amir', '1996-12-10 19:58:17', 'United States', 'Jackson', 'Risus Institute', 'Advertising', '$935.32', 'F'),
+('60', 'Jonah', '1983-01-08 11:17:50', 'India', 'Chandigarh', 'Faucibus Ut Consulting', 'Payroll', '$323.96', 'F'),
+('61', 'Kiara', '1982-11-10 05:52:13', 'United States', 'Salt Lake City', 'Est Nunc Laoreet Consulting', 'Research and Development', '$401.46', 'T'),
+('62', 'Lawrence', '1970-08-20 06:41:05', 'United States', 'Great Falls', 'Ullamcorper Duis Associates', 'Accounting', '$516.48', 'F'),
+('63', 'Kelsey', '1991-11-27 13:43:53', 'India', 'Bhuj', 'A Limited', 'Quality Assurance', '$55.57', 'F'),
+('64', 'Denton', '1992-11-11 09:00:08', 'India', 'Korba', 'Eu Consulting', 'Public Relations', '$530.35', 'F'),
+('65', 'Chaim', '1978-02-12 22:44:54', 'United States', 'Athens', 'Sem Limited', 'Payroll', '$407.90', 'T'),
+('66', 'Amery', '1997-10-05 12:06:11', 'India', 'Port Blair', 'Metus Industries', 'Research and Development', '$351.72', 'T'),
+('67', 'Fulton', '1972-02-18 22:52:15', 'United States', 'Baltimore', 'Est Congue A Institute', 'Research and Development', '$198.65', 'F'),
+('68', 'Ashton', '1988-09-07 00:34:25', 'United States', 'Warren', 'A Auctor Non Consulting', 'Legal Department', '$189.00', 'T'),
+('69', 'Kevin', '1962-06-10 18:46:07', 'India', 'Hassan', 'Vitae Purus Gravida Ltd', 'Legal Department', '$992.34', 'F'),
+('70', 'Craig', '1977-11-06 23:52:03', 'India', 'Itanagar', 'Nulla Tincidunt Neque LLC', 'Human Resources', '$363.97', 'T'),
+('71', 'Reagan', '1972-03-19 05:55:41', 'India', 'Raipur', 'In Lorem Donec Inc.', 'Customer Relations', '$770.98', 'T'),
+('72', 'Garrett', '2005-02-10 22:20:24', 'India', 'Agartala', 'Arcu Morbi Company', 'Human Resources', '$196.14', 'T'),
+('73', 'Keegan', '1995-05-22 02:19:28', 'United States', 'Fort Smith', 'Erat Foundation', 'Accounting', '$488.31', 'F'),
+('74', 'Basia', '1994-05-25 00:11:15', 'United States', 'Broken Arrow', 'A Company', 'Legal Department', '$67.91', 'T'),
+('75', 'Jin', '1974-03-02 22:01:15', 'United States', 'Milwaukee', 'Sit Amet Massa Company', 'Sales and Marketing', '$502.67', 'F'),
+('76', 'Sawyer', '1982-03-05 21:15:31', 'India', 'Imphal', 'Ridiculus Mus Proin Limited', 'Asset Management', '$769.11', 'F'),
+('77', 'Sade', '1985-08-13 23:38:54', 'United States', 'Provo', 'Blandit Enim Corp.', 'Research and Development', '$760.02', 'T'),
+('78', 'Caesar', '1987-11-30 07:39:08', 'United States', 'Fairbanks', 'Ullamcorper Eu Euismod Corp.', 'Asset Management', '$905.62', 'T'),
+('79', 'Rylee', '1981-02-20 12:55:02', 'United States', 'Hartford', 'Augue Foundation', 'Accounting', '$957.15', 'F'),
+('80', 'Charlotte', '1962-06-30 02:13:41', 'United States', 'Madison', 'Elementum Dui Quis PC', 'Media Relations', '$192.01', 'T'),
+('81', 'Harding', '1961-03-11 01:39:21', 'United States', 'Louisville', 'Ac Risus Inc.', 'Payroll', '$361.60', 'T'),
+('82', 'Daquan', '1991-06-17 15:43:39', 'United States', 'Provo', 'Mauris Rhoncus Id Foundation', 'Research and Development', '$435.60', 'T'),
+('83', 'Joseph', '2005-02-07 04:49:11', 'United States', 'Auburn', 'Erat Limited', 'Customer Service', '$126.89', 'F'),
+('84', 'Nina', '1962-02-04 06:48:57', 'India', 'Shimla', 'Sollicitudin Commodo Ipsum Foundation', 'Human Resources', '$675.88', 'F'),
+('85', 'Octavius', '1984-12-22 09:43:47', 'India', 'North Barrackpur', 'Malesuada Id Erat Incorporated', 'Public Relations', '$980.49', 'T'),
+('86', 'Catherine', '1989-07-10 04:51:59', 'United States', 'Honolulu', 'Fusce Industries', 'Public Relations', '$56.01', 'T'),
+('87', 'Lewis', '1991-04-16 16:09:22', 'United States', 'Provo', 'Tempor Limited', 'Sales and Marketing', '$641.74', 'T'),
+('88', 'David', '1987-05-15 10:51:08', 'United States', 'San Antonio', 'In Sodales Elit Corporation', 'Legal Department', '$61.38', 'F'),
+('89', 'Delilah', '1988-04-15 19:31:09', 'India', 'Itanagar', 'Felis Orci Company', 'Human Resources', '$769.63', 'F'),
+('90', 'Jane', '2005-12-26 22:18:12', 'United States', 'Nashville', 'Sapien Nunc Pulvinar Company', 'Legal Department', '$620.32', 'T'),
+('91', 'Emmanuel', '1964-03-19 13:37:30', 'United States', 'St. Petersburg', 'Et Inc.', 'Accounting', '$727.29', 'T'),
+('92', 'Hilda', '1991-07-01 23:30:53', 'United States', 'Gaithersburg', 'Ut Sagittis Lobortis Ltd', 'Quality Assurance', '$448.91', 'T'),
+('93', 'Walter', '1981-11-28 06:38:26', 'United States', 'Lakewood', 'Quisque Corporation', 'Quality Assurance', '$467.83', 'F'),
+('94', 'Sigourney', '1992-11-10 22:40:27', 'India', 'Agartala', 'A Nunc Consulting', 'Tech Support', '$484.64', 'T'),
+('95', 'Barry', '1977-05-01 05:07:53', 'United States', 'Grand Rapids', 'Sollicitudin A Malesuada Foundation', 'Advertising', '$385.42', 'F'),
+('96', 'Heather', '1992-06-20 12:28:16', 'United States', 'Colorado Springs', 'Mauris Ipsum Porta Inc.', 'Research and Development', '$406.66', 'F'),
+('97', 'Timon', '1978-12-21 02:14:30', 'India', 'Burhanpur', 'Porttitor Scelerisque Neque LLP', 'Payroll', '$341.53', 'T'),
+('98', 'Daniel', '1975-10-09 00:27:04', 'United States', 'Norman', 'Molestie Associates', 'Payroll', '$341.42', 'F'),
+('99', 'Alyssa', '1978-04-06 16:33:35', 'United States', 'Fort Worth', 'Mauris Non Dui Institute', 'Tech Support', '$263.78', 'T'),
+('100', 'Kenyon', '1960-12-24 22:37:15', 'India', 'Imphal', 'Pellentesque Habitant Institute', 'Tech Support', '$295.70', 'T');
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
